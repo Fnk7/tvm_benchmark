@@ -22,6 +22,6 @@ def evaluate(host, port, libname, input_shape):
 
 if __name__ == "__main__":
     import networks
-    mod, params, input_shape, output_shape = networks.get("resnet-18")
-    evaluate("0.0.0.0", 9090, "./export_lib/resnet-18_llvm_x64.so", input_shape)
+    mod, params, input_shape, output_shape = networks.get("lstm")
+    evaluate("0.0.0.0", 9090, "./export_lib/lstm_c_x64.so", input_shape)
 

@@ -53,9 +53,9 @@ def compile(mod, params, name="net", llvm=False, arm=True, sve=False):
 
 if __name__ == "__main__":
     import networks
-    network = "resnet-18"
+    network = "lstm"
 
-    mod, params, input_shape, output_shape = networks.get(network)
+    mod, params, _, _ = networks.get(network)
 
     arm = True
     llvm = False
